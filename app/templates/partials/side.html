@@ -1,0 +1,49 @@
+{% load static %}
+<aside class="md:overflow-hidden md:pl-5 md:bg-Blue md:h-screen md:w-[15%]">
+    <div class="flex md:flex-col flex-row md:w-[20vw] w-full">
+        <div class="hidden md:block logo w-full px-3">
+            <div class="w-[4rem]">
+                <img src="{% static 'img/Logo.svg' %}" alt="">
+            </div>
+        </div>
+        <hr class="hidden md:block my-2 overflow-hidden">
+        <div class="flex md:flex-col w-full px-3 justify-between md:space-y-6">
+
+            <div class="flex flex-col w-full">
+                <p class="w-full text-start py-2 md:px-2  rounded-full md:hover:bg-Gray md:hover:text-Dark hover:text-gray-400 md:text-Whitish">
+                    <a href="">Twitter</a>
+                    <span class="px-3 dropdown"><i class="fa fa-chevron-down"></i></span>
+                </p>
+                <div class="hidden drop-menu space-y-2 w-[70%] rounded-lg flex flex-col bg-white md:bg-DarkBlue p-2">
+                    <a href="" class="md:text-gray-400text-Dark  md:hover:text-WhitishGray hover:text-DarkBlue">Overview</a>
+                </div>
+            </div>
+
+            <div class="flex flex-col w-full">
+                <p class="w-full text-start py-2 md:px-2  rounded-full md:hover:bg-Gray md:hover:text-Dark hover:text-gray-400 md:text-Whitish">
+                    <a href="">Facebook</a>
+                    <span class="px-3 dropdown"><i class="fa fa-chevron-down"></i></span>
+                </p>
+                <div class="hidden drop-menu space-y-2 w-[70%] rounded-lg flex flex-col bg-white md:bg-DarkBlue p-2">
+                    <a href="" class="md:text-gray-400text-Dark  md:hover:text-WhitishGray hover:text-DarkBlue">Overview</a>
+                </div>
+            </div>
+            
+            <div class="flex flex-col w-full">
+                <p class="w-full text-start py-2 md:px-2  rounded-full md:hover:bg-Gray md:hover:text-Dark hover:text-gray-400 md:text-Whitish">
+                    <a href="">Instagram</a>
+                    <span class="px-3 dropdown"><i class="fa fa-chevron-down"></i></span>
+                </p>
+                <div class="hidden drop-menu space-y-2 w-[70%] rounded-lg flex flex-col bg-white md:bg-DarkBlue p-2">
+                    <a href="" class="md:text-gray-400text-Dark  md:hover:text-WhitishGray hover:text-DarkBlue">Overview</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <hr class="md:hidden block my-2 overflow-hidden">
+
+</aside>
+
+

@@ -1,0 +1,16 @@
+@tailwind base;
+@taiwind components;
+@tailwind utilities;
+
+*{
+    transition: all ease 0.3s;
+}
+
+header nav img{
+    object-fit: cover;
+}
+header,aside{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}

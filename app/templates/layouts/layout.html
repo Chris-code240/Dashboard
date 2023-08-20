@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}">
+    <script src="{% static 'js/layout.js' %}" defer></script>
+</head>
+<body class="bg-Blue container mx-auto md:pt-3 w-screen">
+
+    <div class="flex rounded-xl w-full">
+        <div class="hidden md:contents">
+            {% include 'partials/side.html' %}
+        </div>
+
+        <div class="block md:w-[85%] w-[100%] mx-auto md:rounded-xl bg-Gray pt-3">
+        
+            {% include 'partials/nav.html' %}
+        {% block content %}
+        {% endblock %}
+        </div>
+    </div>
+<script src="{% static 'js/side.js' %}" class="hidden side-script"></script>
+</body>
+</html>

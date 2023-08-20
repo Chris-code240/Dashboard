@@ -1,0 +1,26 @@
+{% load static %}
+
+<header class="container mx-auto md:w-[90%] w-[100%] bg-Gray">
+    <nav class="flex items-center justify-between w-full md:px-0 px-1">
+        <div class="md:hidden block logo w-full">
+            <div class="w-[4rem]">
+                <img src="{% static 'img/Logo.svg' %}" alt="">
+            </div>
+        </div>
+        <div class="space-x-3 flex w-full items-center justify-end">
+            <form action=""><input type="search" placeholder="Search..." name="" id="" class="rounded-full px-6 py-1 bg-BlueGray focus:outline-none"></form>
+
+            <div class="notification p-3 rounded-full  w-12">
+                <i class="fa fa-bell"></i>
+            </div>
+    
+            <div class="profile w-[2.5rem] h-[2.5rem] rounded-full">
+                <img src="{% static 'img/Christianm.jpg' %}" class="w-full h-full rounded-full" alt="">
+            </div>
+        </div>
+    </nav>
+    <hr class="my-2">
+    <div class="md:hidden">
+        {% include 'partials/side.html' %}
+    </div>
+</header>

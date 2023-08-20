@@ -1,0 +1,60 @@
+
+
+{% extends 'layouts/layout.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="z-10 container mx-auto md:w-[90%] w-full space-y-3 px-2 md:px-0">
+        <div class="flex items-center justify-between w-full my-6">
+            <p class="text-Dark text-2xl">General Report</p>
+            <a href="" class="text-gray-400">Reload data</a>
+        </div>
+
+        <div class="cards w-full flex items-center md:flex-row flex-col md:space-x-3 md:space-y-0 space-x-0 space-y-3 my-6">
+            <div class="card md:w-[15rem] w-full h-[10rem] space-y-4 bg-white py-5 px-6 rounded-lg">
+                <div class="flex items-center justify-between">
+                    <i class="fa fa-users text-4xl  text-gray-500"></i>
+                    <span class="bg-Green text-white px-2 rounded-full">33% <i class="fa fa-chevron-up"></i></span>
+                </div>
+                <p class="text-4xl text-Dark ">15.5K</p>
+                <p class="text-gray-400">Followers</p>
+            </div>
+
+            <div class="card md:w-[15rem] w-full h-[10rem] space-y-4 bg-white py-5 px-6 rounded-lg">
+                <div class="flex items-center justify-between">
+                    <i class="fa fa-thin fa-eye  text-gray-500 text-4xl"></i>
+                    <span class="bg-Green text-white px-2 rounded-full">65% <i class="fa fa-chevron-up"></i></span>
+                </div>
+                <p class="text-4xl text-Dark ">9M</p>
+                <p class="text-gray-400">Impressions</p>
+            </div>
+
+            <div class="card md:w-[15rem] w-full h-[10rem] space-y-4 bg-white py-5 px-6 rounded-lg">
+                <div class="flex items-center justify-between">
+                    <i class="far fa-thumbs-up  text-gray-500 text-4xl"></i>
+                    <span class="bg-Red text-white px-2 rounded-full">2% <i class="fa fa-chevron-down"></i></span>
+                </div>
+                <p class="text-4xl text-Dark ">8M</p>
+                <p class="text-gray-400">Likes</p>
+            </div>
+
+            <div class="card md:w-[15rem] w-full h-[10rem] space-y-4 bg-white py-5 px-6 rounded-lg">
+                <div class="flex items-center justify-between">
+                    <i class="fas fa-message text-gray-500 text-4xl"></i>
+                    <!-- <span class="bg-Red text-white px-2 rounded-full">2% <i class="fa fa-chevron-down"></i></span> -->
+                </div>
+                <p class="text-4xl text-Dark ">8M</p>
+                <p class="text-gray-400">Total Posts</p>
+            </div>
+        </div>
+
+        <div class="flex items-center justify-between space-y-3 my-4 pt-6">
+            <p class="text-2xl text-Dark">Graph Report</p>
+        </div>
+
+        <!-- <div class="pt-6">
+            {{ chart|safe }}
+        </div> -->
+
+    </section>
+{% endblock %}
